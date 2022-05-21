@@ -10,11 +10,13 @@ const SpaceDetail = ({selectedSpace, onGoBackClick}) => {
     return(
         <>
             <button onClick={handleGoBack}> Go back </button>
-
-            <div className="details-container">
-            <img id="planet-image" src={selectedSpace.image}></img>
+            
             <h1>{selectedSpace.planet}</h1>
-            <li>{selectedSpace.description}</li>
+            <div className="details-container">
+            
+            <img id="planet-image" src={selectedSpace.image}></img>
+            
+            <div id="description">{selectedSpace.description}</div>
             <li>{selectedSpace.austronaut}</li>
             </div>
         </>

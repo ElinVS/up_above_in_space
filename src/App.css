@@ -35,10 +35,12 @@ body {
   padding: 90px;
   text-align:center;
   white-space: wrap;
-  overflow: scroll ;
   text-overflow: ellipsis;
   color: rgb(233, 228, 228);
   cursor: pointer;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 20px;
+  text-align: left;
 }
 
 .people-in-space{
@@ -54,19 +56,20 @@ body {
   padding: 30px;
   text-align:center;
   white-space: wrap;
-  overflow: scroll ;
   text-overflow: ellipsis;
   color: rgb(233, 228, 228);
   cursor: pointer;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 20px;
 }
 
 #planet-image{
   display:flex;
   justify-content: center;
-  width:300px;
+  width:400px;
   height: 300px;
-  border-radius: 50%;
   border: 1px solid rgba(233, 228, 228, 0.476);
+  border-radius: 10px;
   background-size: contain;
 }
 
@@ -77,10 +80,36 @@ li {
 
 .details-container {
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
+  column-gap: 10px;
+}
+
+#description{
+  width:400px;
+  height: 300px;
+  border: 1px solid rgba(233, 228, 228, 0.476);
+  border-radius: 10px;
+  color:rgb(233, 228, 228);
+  font-family: 'Ubuntu Mono', monospace;
+  background-color: black;
+}
+
+h1{
+  color:rgb(233, 228, 228);
+  font-family: 'Poppins', sans-serif; 
+  text-align: center;
+}
+
+button {
+  padding: 1.5 em solid #FFFFFF;
+  
 }
 
 
 
+/* font-family: 'Gravitas One', cursive;
+  font-family: 'Playfair Display', serif; */
+  /* font-family: 'Poppins', sans-serif;  */

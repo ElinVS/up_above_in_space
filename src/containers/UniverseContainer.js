@@ -33,7 +33,8 @@ const UniverseContainer = () => {
     } else {
         componentToShow =  
         <>
-        <SpaceList space={space} onPlanetClick={onPlanetClick}/>  <div className="people-in-space" onClick={getAustronauts}><h6>People currently in Space</h6><h1>{austronauts.number}</h1></div>
+        <SpaceList space={space} onPlanetClick={onPlanetClick}/>  
+        <div className="people-in-space" onClick={getAustronauts}><h6>People currently in Space</h6><h1>{austronauts.number}</h1></div>
         </>
     }
 
