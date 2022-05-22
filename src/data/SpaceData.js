@@ -8,8 +8,6 @@ import jupiter from "/Users/user/codeclan_work/week_8/day_5/up_above/src/images/
 import venus from "/Users/user/codeclan_work/week_8/day_5/up_above/src/images/venus.jpeg"
 
 
-
-
 const SpaceData = [
     
     {id:1, 
@@ -58,7 +56,9 @@ const SpaceData = [
     planet: 'Neptune',
     description:'Neptune is the eighth planet from the Sun, making it the most distant in the solar system. This gas giant may have formed much closer to the Sun in the early solar system history before migrating out to its current position.',
     image:neptune,
-    }
+    },
+
+    
 ]
 
 
