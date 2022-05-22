@@ -4,8 +4,6 @@ body {
   background-attachment: fixed;
 }
 
-
-
 @keyframes morph {
   0%, 100%{
     border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
@@ -82,7 +80,28 @@ body {
   cursor: pointer;
   font-family: 'Ubuntu Mono', monospace;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
+}
+
+#quiz {
+  overflow: hidden; 
+  width: 10rem;
+  height: 8rem;
+  border-radius: 22% 26% 22% 28% / 22% 22% 26% 28%;
+  background-image: url('/public/images/nightsky2.jpg');
+  background-size: cover;
+  animation: morph 8.75s linear infinite;
+  margin-left: 800px;
+  margin-top:60px;
+  padding: 80px;
+  text-align:center;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  color: rgb(233, 228, 228);
+  cursor: pointer;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 30px;
+  text-align: center;
 }
 
 #planet-image{
@@ -96,9 +115,6 @@ body {
 }
 
 #moon-image  {
-  /* animation-name: pulse;
-  animation-duration: 2s;
-  animation-iteration-count: infinite; */
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -109,10 +125,6 @@ body {
   border: 1px solid rgba(233, 228, 228, 0.476);
   background-size: contain;
 }
-
-
-
-
 
 li {
   color:rgb(233, 228, 228);
@@ -138,10 +150,27 @@ li {
   background-color: black;
 }
 
+.answer-div{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer-div >li {
+  border: 1px solid rgba(233, 228, 228, 0.476);
+  background-color: #ffffff92;
+  padding: 1em 2em;
+  margin-top: 10px;
+  cursor: pointer;
+  
+}
+
 h1{
   color:rgb(233, 228, 228);
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Poppins', sans-serif;
   text-align: center;
+
 }
 
 h3 {
