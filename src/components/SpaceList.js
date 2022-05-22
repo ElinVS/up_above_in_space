@@ -5,11 +5,7 @@ import SpaceItem from "./SpaceItem";
 const SpaceList = ({space, onPlanetClick}) => {
 
     const spaceArray = space.map((space) => {
-        return (
-            <>
-            <SpaceItem space={space} onPlanetClick={onPlanetClick}/>
-            </>
-        )
+        return <SpaceItem space={space} onPlanetClick={onPlanetClick}/>
     })
 
     return (
