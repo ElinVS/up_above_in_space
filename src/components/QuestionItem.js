@@ -9,7 +9,7 @@ const QuestionItem = ({question, onQuizClick}) => {
 
     return (
         <>
-        <p onClick={handleQuizClick}>{question.title}</p>
+        <p onClick={handleQuizClick}>{question.title} </p>
         </>
     )
 }

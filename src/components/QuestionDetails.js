@@ -23,7 +23,7 @@ const QuestionDetails = ({score, selectedQuestion, onAnswerClick1, onAnswerClick
             <h1>{selectedQuestion.question}</h1>
             
             <div className="answer-div">
-            <li onClick={handleAnswerClick1}>{selectedQuestion.options[0].answer}</li>
+            <li  onClick={handleAnswerClick1}>{selectedQuestion.options[0].answer}</li>
             <li onClick={handleAnswerClick2}>{selectedQuestion.options[1].answer}</li>
             </div>
 

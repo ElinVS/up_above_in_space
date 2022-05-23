@@ -20,6 +20,7 @@ const UniverseContainer = () => {
     const [moon, setMoon] = useState(MoonData)
     const [selectedMoon, setSelectedMoon] = useState(null)
     const [question, setQuestion] = useState(SpaceQuestions)
+    const [nextQuestion,setNextQuestion] = useState(0)
     const [selectedQuestion,setSelectedQuestion]= useState(null)    
     const [score, setScore] = useState(0)
     
@@ -49,6 +50,8 @@ const UniverseContainer = () => {
         if(isCorrect){
             setScore(score + 1)
         }
+        setNextQuestion(nextQuestion +1)
+
     }
 
     const onAnswerClick2 = (isCorrect) => {
@@ -73,7 +76,7 @@ const UniverseContainer = () => {
     } else if (selectedMoon){
         componentToShow = <MoonDetails selectedMoon={selectedMoon} setSelectedMoon={selectedMoon} exitMoon={exitMoon}/>
     }else if (selectedQuestion) {
-        componentToShow = <QuestionDetails selectedQuestion={selectedQuestion} setSelectedQuestion={selectedQuestion} score={score}  onAnswerClick1={onAnswerClick1} onAnswerClick2={onAnswerClick2} exitQuiz={exitQuiz}/>
+        componentToShow = <QuestionDetails selectedQuestion={selectedQuestion} setSelectedQuestion={selectedQuestion} score={score}  onAnswerClick1={onAnswerClick1} onAnswerClick2={onAnswerClick2} exitQuiz={exitQuiz} nextQuestion={nextQuestion}/>
     } else {
         componentToShow =  
         <>
