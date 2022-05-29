@@ -12,6 +12,8 @@ import SpaceQuestions from "../data/SpaceQuestions"
 import QuestionList from "../components/QuestionList"
 import QuestionDetails from "../components/QuestionDetails"
 
+
+
 const UniverseContainer = () => {
 
     const [austronauts,setAustronauts] = useState("")
@@ -84,6 +86,7 @@ const UniverseContainer = () => {
         <div className="people-in-space" onClick={getAustronauts}><h6>People currently in Space</h6><h1>{austronauts.number}</h1></div>
         <MoonList moon={moon} onMoonClick={onMoonClick}/>
         <QuestionList question={question} onQuizClick={onQuizClick}/>
+        
         </>
     }
 
@@ -91,6 +94,8 @@ const UniverseContainer = () => {
     return (
         <>
             <p>{componentToShow}</p>
+            
+
         </>
     )
 }

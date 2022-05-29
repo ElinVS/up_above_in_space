@@ -10,6 +10,7 @@ const SpaceItem = ({space, onPlanetClick}) => {
         <>
             <li onClick={handleClick}>
                 {space.planet}
+                
             </li>
         </>
     )

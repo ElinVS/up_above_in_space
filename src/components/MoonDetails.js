@@ -1,4 +1,5 @@
 import React from "react"
+import person_1 from "/Users/user/codeclan_work/week_8/day_5/up_above/src/images/person_1.png"
 
 
 const MoonDetails = ({selectedMoon, exitMoon}) => {
@@ -30,6 +31,7 @@ const MoonDetails = ({selectedMoon, exitMoon}) => {
         <div className="details-container">
             <h3>{selectedMoon.fact5} -</h3>
             <img id="moon-image" src={selectedMoon.image5} alt="image of the moon"></img>
+            
         </div>
 
         </>
